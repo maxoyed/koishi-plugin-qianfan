@@ -1,21 +1,55 @@
 {
   "name": "koishi-plugin-qianfan",
   "description": "千帆大模型插件",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
+  "author": {
+    "name": "maxoyed",
+    "email": "maxoyed@gmail.com",
+    "url": "https://github.com/maxoyed"
+  },
+  "contributors": [
+    "maxoyed <maxoyed@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxoyed/koishi-plugin-qianfan.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maxoyed/koishi-plugin-qianfan/issues"
+  },
+  "homepage": "https://github.com/maxoyed/koishi-plugin-qianfan#readme",
   "files": [
     "lib",
     "dist"
   ],
   "license": "MIT",
-  "scripts": {},
   "keywords": [
     "chatbot",
     "koishi",
-    "plugin"
+    "plugin",
+    "qianfan",
+    "llm"
   ],
   "peerDependencies": {
     "koishi": "^4.15.3"
+  },
+  "koishi": {
+    "description": {
+      "en": "Qianfan LLM Plugin",
+      "zh": "千帆大模型插件"
+    },
+    "service": {
+      "implements": [
+        "dialogue"
+      ]
+    },
+    "locales": [
+      "zh"
+    ]
+  },
+  "dependencies": {
+    "qianfan": "^0.0.4"
   }
 }
