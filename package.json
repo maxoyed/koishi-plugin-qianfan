@@ -33,7 +33,7 @@
     "llm"
   ],
   "peerDependencies": {
-    "koishi": "^4.15.3"
+    "koishi": "^4.15.5"
   },
   "koishi": {
     "description": {
